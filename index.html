@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/nav-bar.css" rel="Stylesheet">
+    <link href="css/bootstrap.css" rel="Stylesheet">
+    <link href="css/content-section.css" rel="Stylesheet">
+    <link href="css/footer-section.css" rel="stylesheet">
+    <link href="css/category-menu.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+          crossorigin="anonymous">
+    <title>XXX PROJECT</title>
+</head>
+<body onload="init();">
+<!-- Menu NavBar -->
+<div class="nav-bar fixed-top">
+    <div class="d-flex justify-content-center h-100">
+        <div>
+            <a href="index.html" class="logo"></a>
+        </div>
+        <div class="searchbar">
+            <input class="search_input" id="search-text" type="text" name="" placeholder="Search...">
+            <a href="#" id="search-button" class="search_icon"><i class="fas fa-search"></i></a>
+        </div>
+        <div>
+            <button class="category" id="menu-button" onclick="open_category();"></button>
+        </div>
+    </div>
+</div>
+
+<!-- Category section -->
+<div class="container" id="category-menu" style="display: none">
+    <H1 align="center" style="color: white">Category</H1>
+    <button class="close_button" onclick="close_category()">X</button>
+    <div class="category-table"><table id="category-table" style="width: 100%; padding:2%;
+    height: 100%"></table></div>
+</div>
+
+<!-- Content section -->
+<div class="content-style">
+    <div class="banner-left">
+
+    </div>
+    <div class="content-table" >
+        <table id="content-table" class="table-style"></table>
+    </div>
+    <div class="banner-right">
+
+    </div>
+</div>
+
+<!-- Footer section -->
+<div class="footer-style">
+    <div class="footer-logo"></div>
+    <div class="footer-description"></div>
+    <div class="footer-reference"></div>
+</div>
+<script src="js/search-action.js"></script>
+<script src="js/category-menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.content-style{
+    margin-top: 80px;
+    height: 1000px;
+}
+
+.banner-left{
+    float: left;
+    height: 100%;
+    width: 15%;
+    background-color: red;
+}
+
+.banner-right{
+    float: right;
+    height: 100%;
+    width: 15%;
+    background-color: red;
+}
+
+.content-table{
+    display:  inline-block;
+    margin: 0 auto;
+    height: 100%;
+    width: 70%;
+    background-color: black;
+}
+
